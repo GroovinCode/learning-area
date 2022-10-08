@@ -30,6 +30,15 @@
 
     // Add your code here
 
+    myArray.pop();
+    myArray.push('Joe','Ko');
+    let i = 0;
+    for (const iray of myArray) {
+      myArray[i] = `${myArray[i]} (${i})`;
+      i++;
+    };
+    const myString = myArray.join('-');
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
