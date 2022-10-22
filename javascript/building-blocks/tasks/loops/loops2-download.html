@@ -42,6 +42,16 @@
 
     // Add your code here
 
+    for (let n = 0; n < phonebook.length; n++ ) {
+      if (phonebook[n] ['name'] === 'Mustafa') {
+        let names = phonebook[n] ['name'];
+        let numbers = phonebook[n] ['number'];
+        para.textContent = `Name: ${names}, Number: ${numbers}`;
+        break;
+      } else {
+          n < phonebook.length-1 ? para.textContent = 'Searching' : para.textContent = 'Name not found.'; 
+      }  
+    }
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);
