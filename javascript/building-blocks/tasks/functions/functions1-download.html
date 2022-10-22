@@ -32,7 +32,8 @@
     // Add your code here
 
   function chooseName() {
-    let nam = names[3];
+    let nu = Math.floor((Math.random()) * (names.length-1)); 
+    let nam = names[nu];
     para.textContent = nam;
   }
 
