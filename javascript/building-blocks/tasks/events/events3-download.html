@@ -43,6 +43,12 @@
 
   // Add your code here
 
+  buttonBar.addEventListener('click', (event) => {
+    let c = event.target.textContent;
+    event.target.style.backgroundColor = c;
+  });
+
+
   </script>
   </body>
 </html>
