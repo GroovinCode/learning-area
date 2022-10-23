@@ -51,6 +51,22 @@
 
     // Add your code here
 
+    canvas.addEventListener('keydown', (event) => {
+      if (event.key === 'r') {
+        x += 50;
+      } else if (event.key === 'l') {
+        x -= 50;
+      } else if (event.key === 'u') {
+        y += 50;
+      } else if (event.key === 'd') {
+        y-= 50;
+      } else {
+        x = 50;
+        y = 50;
+      }   
+      drawCircle(x, y, size);
+    });
+
   </script>
   </body>
   
