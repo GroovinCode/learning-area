@@ -26,14 +26,16 @@
 
   </body>
   <script>
-    const cat = {
-      name : 'Bertie',
-      breed : 'Cymric',
-      color : 'white',
-      greeting: function() {
-        console.log('Meow!');
-      }
+
+    function Greeting(name, breed) {
+      this.name = name;
+      this.breed = breed;
+      console.log(`Hello said ${this.name} the ${this.breed}`);
     }
+
+    const cat = new Greeting('Bertie', 'Cymric');
+    const cat2 = new Greeting('Callie', 'Tabby');
+
   </script>
 
 </html>
