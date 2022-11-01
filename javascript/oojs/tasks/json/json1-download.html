@@ -44,6 +44,19 @@
 
       // Add your code here
 
+      const cString = JSON.parse(catString);
+      const cLength = cString.length-1;
+
+      for (const mom of cString) {
+        let m = mom.name;
+        let end = cString.indexOf(mom);
+        console.log(cString);
+        end === cLength ? motherInfo += `and ${m}.` : motherInfo += `${m}, `;
+        total += mom.kittens.length;
+        mom.kittens.gender = 'm' ? male += 1 : male += 0;
+        kittenInfo = `${total} Kittens, ${male} are male.`;
+      }
+
       // Don't edit the code below here!
 
       para1.textContent = motherInfo;
