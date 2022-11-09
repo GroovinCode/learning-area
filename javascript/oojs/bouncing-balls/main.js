@@ -92,7 +92,10 @@ class EvilCircle extends Shape {
           ball.exists = false;
           nballs -= 1;
           pballs.textContent = `Ball Count: ${nballs}`;
-        }
+          if (nballs === 0) {
+            pballs.textContent = 'GAME OVER You have defeated the dark side!';
+          } 
+        }  
       }
     }
   }
